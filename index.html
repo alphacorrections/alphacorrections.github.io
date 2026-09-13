@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0d0f" />
+  <title>Alpha Corrections // Temporal Integrity Division</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">ALPHA CORRECTIONS NETWORK</div>
+      <h1>Temporal Integrity Division</h1>
+    </div>
+    <div class="status-badge">SECURE CHANNEL</div>
+  </header>
+
+  <main class="shell">
+    <section id="access-screen" class="panel access-panel">
+      <div class="classification">RESTRICTED // ALPHA CLEARANCE</div>
+      <h2>External Operative Gateway</h2>
+      <p>
+        Authorized access only. This terminal contains materials relating to an
+        active correction within Alpha continuity.
+      </p>
+      <button id="enter-system" class="primary-btn">ENTER CASE SYSTEM</button>
+      <div class="fineprint">Unauthorized disclosure is subject to correction.</div>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <div class="case-banner">
+        <div>
+          <div class="eyebrow">ACTIVE CASE</div>
+          <h2>C-29 ECHO</h2>
+        </div>
+        <div class="case-meta">
+          <span>OPERATIVE: F-29 ALPHA</span>
+          <span>STATUS: BREACH CONFIRMED</span>
+          <span id="correction-status">CORRECTION: PENDING</span>
+        </div>
+      </div>
+
+      <div class="alert">
+        <strong>NOTICE:</strong> Target C-29 Echo is trained in Meridian investigative procedure.
+        Assume deliberate misdirection.
+      </div>
+
+      <div class="grid">
+        <button class="case-card" data-modal="profile-modal">
+          <span class="card-code">FILE 01</span>
+          <strong>Target Profile</strong>
+          <small>Designation, threat assessment, known capability.</small>
+        </button>
+
+        <button class="case-card" data-modal="surveillance-modal">
+          <span class="card-code">FILE 02</span>
+          <strong>Surveillance</strong>
+          <small>Verify physical environment against recorded state.</small>
+        </button>
+
+        <button class="case-card" data-modal="fracture-modal">
+          <span class="card-code">FILE 03</span>
+          <strong>Fracture Analysis</strong>
+          <small>Continuity events, temporal signatures, breach record.</small>
+        </button>
+
+        <button class="case-card" data-modal="intercept-modal">
+          <span class="card-code">FILE 04</span>
+          <strong>Intercept 02-17</strong>
+          <small>Damaged unauthorized communication.</small>
+        </button>
+
+        <button class="case-card" data-modal="correction-modal">
+          <span class="card-code">FILE 05</span>
+          <strong>Correction Authorization</strong>
+          <small>Alpha acknowledgement required.</small>
+        </button>
+
+        <button class="case-card locked-card" data-modal="archive-modal">
+          <span class="card-code">RESTRICTED</span>
+          <strong>Meridian Archive</strong>
+          <small>Three-part credential required.</small>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROFILE -->
+  <div class="modal hidden" id="profile-modal">
+    <div class="modal-card">
+      <button class="close-btn">×</button>
+      <div class="classification">CLASSIFIED // CASE C-29</div>
+      <h2>Target Profile: ECHO</h2>
+      <dl class="data-list">
+        <div><dt>Designation</dt><dd>C-29 ECHO</dd></div>
+        <div><dt>Status</dt><dd>ROGUE</dd></div>
+        <div><dt>Threat Classification</dt><dd>CRITICAL</dd></div>
+        <div><dt>Meridian Training</dt><dd>CONFIRMED</dd></div>
+        <div><dt>Current Continuity</dt><dd>ALPHA</dd></div>
+        <div><dt>Objective</dt><dd>UNKNOWN</dd></div>
+        <div><dt>Current Location</dt><dd>UNKNOWN</dd></div>
+      </dl>
+      <div class="redacted-block">
+        <p>Echo demonstrates advanced knowledge of Meridian field procedure.</p>
+        <p>Target has shown repeated ability to anticipate Alpha investigative response.</p>
+        <p>Visual identification withheld under Integrity Directive 7.</p>
+      </div>
+      <div class="warning">DO NOT ENGAGE. DO NOT RESPOND TO CONTACT.</div>
+    </div>
+  </div>
+
+  <!-- SURVEILLANCE -->
+  <div class="modal hidden" id="surveillance-modal">
+    <div class="modal-card wide">
+      <button class="close-btn">×</button>
+      <div class="classification">SURVEILLANCE // RESIDENTIAL NODE</div>
+      <h2>Physical State Verification</h2>
+      <p class="intro">
+        Compare the recorded state below against the current physical environment.
+        Any discrepancy may indicate target interference.
+      </p>
+
+      <div class="surveillance-grid">
+        <article>
+          <img src="assets/images/painting-reference.jpg" alt="Painting reference placeholder">
+          <h3>FRAME A // ARTWORK</h3>
+          <p>Verify orientation and physical state.</p>
+        </article>
+        <article>
+          <img src="assets/images/closet-reference.jpg" alt="Closet reference placeholder">
+          <h3>FRAME B // STORAGE</h3>
+          <p>Verify object order and placement.</p>
+        </article>
+        <article>
+          <img src="assets/images/loft-reference.jpg" alt="Art loft reference placeholder">
+          <h3>FRAME C // CREATIVE SPACE</h3>
+          <p>Verify orientation and physical state.</p>
+        </article>
+      </div>
+
+      <div class="tip">
+        Recovered anomalies should be preserved. Do not discard any physical evidence.
+      </div>
+    </div>
+  </div>
+
+  <!-- FRACTURE -->
+  <div class="modal hidden" id="fracture-modal">
+    <div class="modal-card wide">
+      <button class="close-btn">×</button>
+      <div class="classification">TEMPORAL EVENT LOG // INTERNAL</div>
+      <h2>Fracture Analysis</h2>
+      <p class="intro">
+        Consolidated events from affected continuities. Review prior to correction authorization.
+      </p>
+
+      <div class="log-table">
+        <div class="log-row"><span>23:41</span><span>C-441 reports unexplained boundary instability.</span></div>
+        <div class="log-row"><span>00:03</span><span>Communication with C-441 lost.</span></div>
+        <div class="log-row"><span>00:18</span><span>DARK EVENT signature confirmed in C-441.</span></div>
+        <div class="log-row"><span>00:36</span><span>Meridian survey team dispatched to adjacent continuity C-440.</span></div>
+        <div class="log-row"><span>00:52</span><span>Similar DARK EVENT signature detected in C-208.</span></div>
+        <div class="log-row"><span>01:07</span><span>C-208 reports visual degradation along continuity boundary.</span></div>
+        <div class="log-row"><span>01:14</span><span>Temporal Integrity Division elevated to Integrity Condition III.</span></div>
+        <div class="log-row"><span>01:31</span><span>C-208 enters active fragmentation.</span></div>
+        <div class="log-row important"><span>01:48</span><span>First abnormal reading detected in ALPHA continuity.</span></div>
+        <div class="log-row important"><span>01:51</span><span>DARK EVENT signature confirmed in ALPHA continuity.</span></div>
+        <div class="log-row"><span>01:57</span><span>Meridian surveillance activated within ALPHA.</span></div>
+        <div class="log-row important"><span>02:03</span><span>First confirmed fracture recorded in ALPHA.</span></div>
+        <div class="log-row"><span>02:09</span><span>Unidentified cross-continuity signal detected.</span></div>
+        <div class="log-row important"><span>02:17</span><span>C-29 ECHO breaches ALPHA continuity.</span></div>
+        <div class="log-row"><span>02:22</span><span>C-29 ECHO designated probable source of ALPHA fracture.</span></div>
+        <div class="log-row"><span>02:41</span><span>F-29 ALPHA field directive authorized.</span></div>
+      </div>
+
+      <div class="assessment">
+        <div class="eyebrow">MERIDIAN ASSESSMENT</div>
+        <strong>C-29 ECHO is the probable source of the ongoing fracture event.</strong>
+        <p>Correction recommended before convergence threshold is reached.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERCEPT -->
+  <div class="modal hidden" id="intercept-modal">
+    <div class="modal-card">
+      <button class="close-btn">×</button>
+      <div class="classification">INTERCEPTED COMMUNICATION // DEGRADED</div>
+      <h2>Intercept 02-17</h2>
+      <audio controls preload="none">
+        <source src="assets/audio/intercept-02-17.mp3" type="audio/mpeg">
+        Audio unavailable.
+      </audio>
+
+      <div class="transcript">
+        <p><span class="timestamp">00:03</span> "...Alpha..."</p>
+        <p><span class="timestamp">00:07</span> "[SIGNAL LOSS]"</p>
+        <p><span class="timestamp">00:12</span> "...not the source..."</p>
+        <p><span class="timestamp">00:17</span> "...before I arrived..."</p>
+        <p><span class="timestamp">00:23</span> "[CORRUPTED]"</p>
+        <p><span class="timestamp">00:29</span> "...three..."</p>
+        <p><span class="timestamp">00:34</span> "...can't let Meridian..."</p>
+        <p><span class="timestamp">00:39</span> "...find me..."</p>
+      </div>
+
+      <div class="assessment">
+        <div class="eyebrow">ANALYST NOTE</div>
+        <p>
+          Communication likely represents deliberate misinformation intended to compromise
+          Alpha's investigation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CORRECTION -->
+  <div class="modal hidden" id="correction-modal">
+    <div class="modal-card">
+      <button class="close-btn">×</button>
+      <div class="classification">CORRECTION ORDER // C-29 ECHO</div>
+      <h2>Alpha Acknowledgement</h2>
+      <p>Correction authorization cannot proceed until all conditions are acknowledged.</p>
+
+      <label class="checkline"><input type="checkbox" class="ack"> I will not initiate contact with C-29 ECHO.</label>
+      <label class="checkline"><input type="checkbox" class="ack"> I will not respond to attempted contact from C-29 ECHO.</label>
+      <label class="checkline"><input type="checkbox" class="ack"> I understand information supplied by C-29 ECHO may constitute deliberate manipulation.</label>
+      <label class="checkline"><input type="checkbox" class="ack"> I will report unauthorized communications immediately.</label>
+
+      <button id="acknowledge-btn" class="primary-btn" disabled>ACKNOWLEDGE</button>
+      <div id="ack-result" class="result hidden">
+        ALPHA COMPLIANCE RECORDED.<br>
+        CORRECTION AUTHORIZATION: PENDING.
+      </div>
+    </div>
+  </div>
+
+  <!-- ARCHIVE -->
+  <div class="modal hidden" id="archive-modal">
+    <div class="modal-card">
+      <button class="close-btn">×</button>
+      <div class="classification">MERIDIAN ARCHIVE // RESTRICTED</div>
+      <h2>Three-Part Credential Required</h2>
+      <p>Recovered evidence may contain archive authorization fragments.</p>
+
+      <div class="credential-grid">
+        <input id="cred-symbol" placeholder="SYMBOL" autocomplete="off">
+        <input id="cred-id" placeholder="IDENTIFIER" autocomplete="off">
+        <input id="cred-keyword" placeholder="KEYWORD" autocomplete="off">
+      </div>
+
+      <button id="archive-submit" class="primary-btn">REQUEST ACCESS</button>
+      <div id="archive-error" class="error hidden">CREDENTIAL REJECTED.</div>
+    </div>
+  </div>
+
+  <!-- ECHO HIJACK -->
+  <div class="modal hidden" id="echo-modal">
+    <div class="modal-card echo-card">
+      <div id="echo-terminal">
+        <p class="echo-system">ARCHIVE REQUEST ACCEPTED...</p>
+        <p class="echo-system">RETRIEVING...</p>
+        <p class="echo-error">SOURCE MISMATCH</p>
+        <p class="echo-error">UNAUTHORIZED PROCESS DETECTED</p>
+        <div class="echo-message hidden" id="echo-message">
+          <p><strong>ALPHA—</strong></p>
+
+          <p>If you're reading this, Meridian hasn't found this channel yet.</p>
+
+          <p>They told you I caused the fractures.</p>
+
+          <p><strong>Look at their timestamps.</strong></p>
+
+          <p>The Darkness was here before I was.</p>
+
+          <p>My designation is C-29 Echo.</p>
+
+          <p>But that's not my name.</p>
+
+          <p><strong>My name is Fernanda Cruz.</strong></p>
+
+          <p>I'm you.</p>
+
+          <p>Not from your future. Not from your past.</p>
+
+          <p><strong>From another version of it.</strong></p>
+
+          <p>Meridian sent you to find me because they knew I would think the way you do.</p>
+
+          <p>And because they knew you would believe them before you believed yourself.</p>
+
+          <p>
+            Meridian will tell you I'm constructing an identity from information I stole.
+            So I'll tell you something they don't have.
+          </p>
+
+          <p>
+            You still play pretend. You still have people who exist nowhere anyone else can see.
+            And the only person you've ever let into that world is Kevin.
+          </p>
+
+          <p><strong>I know.</strong></p>
+
+          <p><strong>Mine have different names.</strong></p>
+
+          <p>
+            I crossed into Alpha to warn you, but I can't send you what I know through one channel.
+            Meridian monitors complete transmissions.
+          </p>
+
+          <p>So I divided it.</p>
+
+          <p><strong>Three fragments. Three people you trust.</strong></p>
+
+          <p>They each received something from me.</p>
+
+          <p>Find them.</p>
+
+          <p>Put the pieces together.</p>
+
+          <p>And whatever you do—</p>
+
+          <p><strong>do not tell Meridian.</strong></p>
+
+          <p class="signature">— C-29 ECHO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    ALPHA CORRECTIONS NETWORK // TEMPORAL INTEGRITY DIVISION
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
