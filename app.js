@@ -94,3 +94,4 @@ document.addEventListener("keydown", (e) => {
     localStorage.removeItem("echoUnlocked");
   }
 });
+\n\n// Test mode: append ?test=1 to the URL to reveal a reset control.\nconst params = new URLSearchParams(window.location.search);\nconst testReset = document.querySelector("#test-reset");\nif (params.get("test") === "1" && testReset) {\n  testReset.classList.remove("hidden");\n  testReset.addEventListener("click", () => {\n    localStorage.removeItem("alphaCorrectionsEntered");\n    localStorage.removeItem("alphaCorrectionAcknowledged");\n    localStorage.removeItem("echoUnlocked");\n    window.location.href = window.location.pathname + "?test=1";\n  });\n}\n

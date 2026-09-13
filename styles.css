@@ -466,3 +466,16 @@ footer {
     grid-template-columns: 70px 1fr;
   }
 }
+
+
+.test-reset {
+  display: block;
+  margin: 14px auto 0;
+  padding: 8px 10px;
+  background: transparent;
+  border: 1px dashed #555c62;
+  color: #767d83;
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
