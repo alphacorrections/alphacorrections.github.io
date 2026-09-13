@@ -95,3 +95,11 @@ The site package already includes Kevin's current reference photos for:
 - Painting in main room: flip upside down.
 - Closet: swap game positions and use UNO as the playable clue location.
 - Art loft: flip the lower-right black-and-white image upside down.
+
+
+## V3 test mode
+For testing, open the live site with `?test=1` at the end of the URL, for example:
+
+`https://alphacorrections.github.io/?test=1`
+
+A small `RESET TEST MODE` control appears at the bottom only in test mode. The normal birthday URL does not show it.

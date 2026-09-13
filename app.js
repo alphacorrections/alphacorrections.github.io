@@ -86,12 +86,36 @@ if (localStorage.getItem("echoUnlocked") === "1") {
   $("#echo-message").classList.remove("hidden");
 }
 
-// Safety escape during testing: press Shift+R to reset progress.
+function resetAlphaCorrectionsProgress() {
+  localStorage.removeItem("alphaCorrectionsEntered");
+  localStorage.removeItem("alphaCorrectionAcknowledged");
+  localStorage.removeItem("echoUnlocked");
+}
+
+// Safety escape during testing: Shift+R resets and immediately reloads.
 document.addEventListener("keydown", (e) => {
   if (e.shiftKey && e.key.toLowerCase() === "r") {
-    localStorage.removeItem("alphaCorrectionsEntered");
-    localStorage.removeItem("alphaCorrectionAcknowledged");
-    localStorage.removeItem("echoUnlocked");
+    e.preventDefault();
+    resetAlphaCorrectionsProgress();
+    window.location.reload();
   }
 });
-\n\n// Test mode: append ?test=1 to the URL to reveal a reset control.\nconst params = new URLSearchParams(window.location.search);\nconst testReset = document.querySelector("#test-reset");\nif (params.get("test") === "1" && testReset) {\n  testReset.classList.remove("hidden");\n  testReset.addEventListener("click", () => {\n    localStorage.removeItem("alphaCorrectionsEntered");\n    localStorage.removeItem("alphaCorrectionAcknowledged");\n    localStorage.removeItem("echoUnlocked");\n    window.location.href = window.location.pathname + "?test=1";\n  });\n}\n
+
+// Test utilities:
+//   ?test=1  -> show a visible RESET TEST MODE button
+//   ?reset=1 -> reset immediately, then return to ?test=1
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("reset") === "1") {
+  resetAlphaCorrectionsProgress();
+  window.location.replace(window.location.pathname + "?test=1");
+}
+
+const testReset = document.querySelector("#test-reset");
+if (params.get("test") === "1" && testReset) {
+  testReset.classList.remove("hidden");
+  testReset.addEventListener("click", () => {
+    resetAlphaCorrectionsProgress();
+    window.location.replace(window.location.pathname + "?test=1");
+  });
+}

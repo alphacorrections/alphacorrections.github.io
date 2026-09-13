@@ -468,14 +468,28 @@ footer {
 }
 
 
+
+
+
+.princess-line {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px dashed #3a4148;
+  color: #d9d3c7;
+}
+
 .test-reset {
-  display: block;
-  margin: 14px auto 0;
-  padding: 8px 10px;
-  background: transparent;
-  border: 1px dashed #555c62;
-  color: #767d83;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  padding: 10px 12px;
+  background: #171b20;
+  border: 1px solid #8b949d;
+  color: #e0e4e8;
   font: inherit;
-  font-size: 10px;
+  font-size: 11px;
+  letter-spacing: .08em;
   cursor: pointer;
+  box-shadow: 0 6px 24px rgba(0,0,0,.35);
 }
