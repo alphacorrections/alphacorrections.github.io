@@ -64,7 +64,7 @@ Each location yields:
 - 29
 - ORIGIN
 
-One clue can require Fernanda to play the selected game before earning its fragment.
+The closet anomaly uses UNO. Fernanda must identify the swap and play UNO to earn the `29` fragment.
 
 ---
 

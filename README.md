@@ -83,3 +83,15 @@ Then refresh to clear saved local progress.
 5. Add Riverwalk coordinate handoff.
 6. Add World Market/NFC + fallback email trigger.
 7. Final Echo letter + blank Word document.
+
+
+## Current surveillance assets
+The site package already includes Kevin's current reference photos for:
+- painting reference
+- closet reference
+- art loft reference
+
+### Planned physical anomalies
+- Painting in main room: flip upside down.
+- Closet: swap game positions and use UNO as the playable clue location.
+- Art loft: flip the lower-right black-and-white image upside down.
