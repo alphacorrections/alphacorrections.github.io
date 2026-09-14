@@ -109,3 +109,16 @@ A small `RESET TEST MODE` control appears at the bottom only in test mode. The n
 - Added Meridian symbol branding to the site and opening directive.
 - Added Crow Industries emblem and foreshadowing on the Echo hijack / case file.
 - Added updated friend letters that mention Crow Industries while preserving note-encoding clues.
+
+## V7
+Dashboard order:
+1. Target Profile
+2. Correction Authorization
+3. Surveillance
+4. Fracture Analysis
+5. Intercept 02-17
+6. Restricted Archive
+
+After Echo unlocks, a hidden Crow Industries relay appears.
+Crow relay code: BLACKBIRD
+Recommended: put AFTER_CONTINUITY.txt on the flash drive so the Crow relay becomes an optional epilogue after the blank Continuity document.

@@ -72,7 +72,7 @@ $("#archive-submit").addEventListener("click", () => {
     $("#archive-modal").classList.add("hidden");
     const echoModal = $("#echo-modal");
     echoModal.classList.remove("hidden");
-    localStorage.setItem("echoUnlocked", "1");
+    localStorage.setItem("echoUnlocked", "1");\n    const cc = document.getElementById("crow-card"); if (cc) cc.classList.remove("hidden");
 
     setTimeout(() => {
       $("#echo-message").classList.remove("hidden");
@@ -118,4 +118,24 @@ if (params.get("test") === "1" && testReset) {
     resetAlphaCorrectionsProgress();
     window.location.replace(window.location.pathname + "?test=1");
   });
+}
+
+const crowSubmit = document.getElementById("crow-submit");
+if (crowSubmit) {
+  crowSubmit.addEventListener("click", () => {
+    const code = (document.getElementById("crow-code").value || "").trim().toUpperCase();
+    if (code === "BLACKBIRD") {
+      document.getElementById("crow-error").classList.add("hidden");
+      document.getElementById("crow-lock").classList.add("hidden");
+      document.getElementById("crow-letter").classList.remove("hidden");
+      localStorage.setItem("crowUnlocked", "1");
+    } else {
+      document.getElementById("crow-error").classList.remove("hidden");
+    }
+  });
+}
+if (localStorage.getItem("crowUnlocked") === "1") {
+  const cl = document.getElementById("crow-lock");
+  const letter = document.getElementById("crow-letter");
+  if (cl && letter) { cl.classList.add("hidden"); letter.classList.remove("hidden"); }
 }

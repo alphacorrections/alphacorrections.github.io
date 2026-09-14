@@ -574,3 +574,25 @@ footer {
   .crow-signal-box { display:block; }
   .crow-signal-logo { margin-bottom: 10px; }
 }
+
+.external-card {
+  border-color: #4b4f53;
+  background: linear-gradient(145deg, #11151a, #0a0d10);
+}
+.crow-card { border-color:#40454a; }
+.crow-code-input {
+  width:100%;
+  margin-top:14px;
+  padding:13px;
+  background:#080a0c;
+  border:1px solid #3a4148;
+  color:#e7e3da;
+  font:inherit;
+  text-transform:uppercase;
+}
+.crow-letter {
+  margin-top:20px;
+  line-height:1.7;
+  padding-top:18px;
+  border-top:1px solid #363c42;
+}

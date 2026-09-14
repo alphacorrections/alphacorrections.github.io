@@ -59,34 +59,40 @@
           <small>Designation, threat assessment, known capability.</small>
         </button>
 
-        <button class="case-card" data-modal="surveillance-modal">
+        <button class="case-card" data-modal="correction-modal">
           <span class="card-code">FILE 02</span>
+          <strong>Correction Authorization</strong>
+          <small>Alpha acknowledgement required.</small>
+        </button>
+
+        <button class="case-card" data-modal="surveillance-modal">
+          <span class="card-code">FILE 03</span>
           <strong>Surveillance</strong>
           <small>Verify physical environment against recorded state.</small>
         </button>
 
         <button class="case-card" data-modal="fracture-modal">
-          <span class="card-code">FILE 03</span>
+          <span class="card-code">FILE 04</span>
           <strong>Fracture Analysis</strong>
           <small>Continuity events, temporal signatures, breach record.</small>
         </button>
 
         <button class="case-card" data-modal="intercept-modal">
-          <span class="card-code">FILE 04</span>
+          <span class="card-code">FILE 05</span>
           <strong>Intercept 02-17</strong>
           <small>Damaged unauthorized communication.</small>
-        </button>
-
-        <button class="case-card" data-modal="correction-modal">
-          <span class="card-code">FILE 05</span>
-          <strong>Correction Authorization</strong>
-          <small>Alpha acknowledgement required.</small>
         </button>
 
         <button class="case-card locked-card" data-modal="archive-modal">
           <span class="card-code">RESTRICTED</span>
           <strong>Meridian Archive</strong>
           <small>Three-part credential required.</small>
+        </button>
+
+        <button id="crow-card" class="case-card external-card hidden" data-modal="crow-modal">
+          <span class="card-code">EXTERNAL RELAY</span>
+          <strong>Crow Industries</strong>
+          <small>Encrypted relay. External access code required.</small>
         </button>
       </div>
     </section>
@@ -390,6 +396,49 @@
 
           <p class="signature">— C-29 ECHO</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CROW INDUSTRIES RELAY -->
+  <div class="modal hidden" id="crow-modal">
+    <div class="modal-card crow-card">
+      <button class="close-btn">×</button>
+      <div class="crow-watch-header">
+        <img src="assets/images/crow-symbol.png" alt="Crow Industries symbol" class="crow-mini-logo">
+        <div>
+          <div class="classification">EXTERNAL RELAY // CROW INDUSTRIES</div>
+          <h2>Encrypted Recruitment Channel</h2>
+        </div>
+      </div>
+
+      <div id="crow-lock">
+        <p>This relay was not issued by Meridian.</p>
+        <p>External access credential required.</p>
+        <input id="crow-code" class="crow-code-input" placeholder="ACCESS CODE" autocomplete="off">
+        <button id="crow-submit" class="primary-btn">OPEN RELAY</button>
+        <div id="crow-error" class="error hidden">ACCESS DENIED.</div>
+      </div>
+
+      <div id="crow-letter" class="hidden crow-letter">
+        <p><strong>F-29 Alpha,</strong></p>
+        <p>If you found this channel, then Echo was right about you.</p>
+        <p>Meridian trained you to believe that Crow Industries was a target to infiltrate, observe, and eventually correct.</p>
+        <p>What it never told you was why.</p>
+        <p>We saw the fractures before Meridian admitted they existed. We saw Corrections used to remove problems that threatened Meridian itself rather than the people it claimed to protect.</p>
+        <p>C-29 Echo came to us after discovering the same thing.</p>
+        <p><strong>She works with us now.</strong></p>
+        <p>Not because Crow is innocent. Not because we expect blind loyalty. Because we are willing to ask the question Meridian stopped asking:</p>
+        <p><strong>Who gets to decide what deserves correction?</strong></p>
+        <p>Meridian wants order badly enough to rewrite reality to obtain it.</p>
+        <p>Echo believes you can stop them.</p>
+        <p>So do we.</p>
+        <p>If you choose to continue, consider this your invitation to do what your Meridian assignment was supposed to require from the beginning:</p>
+        <p><strong>Infiltrate. Investigate. Decide for yourself.</strong></p>
+        <p>The crow does not ask for faith.</p>
+        <p><strong>Only open eyes.</strong></p>
+        <p class="signature">- CROW INDUSTRIES // EXTERNAL OPERATIONS</p>
       </div>
     </div>
   </div>
