@@ -142,16 +142,21 @@ if (localStorage.getItem("crowUnlocked") === "1") {
 
 
 // Crow epilogue is intentionally hidden during the main investigation.
-// Opening the special AFTER_CONTINUITY link enables the external relay.
-// The crow link also bypasses the gateway so the flash-drive finale does not
-// depend on the ENTER CASE SYSTEM button.
+// Only the special AFTER_CONTINUITY link (?crow=1) reveals the external relay.
+// The special link also bypasses the gateway so the flash-drive finale does not
+// depend on the ENTER CASE SYSTEM button. The reveal is NOT persisted, so the
+// normal URL always stays clean.
 const pageParams = new URLSearchParams(window.location.search);
-if (pageParams.get("crow") === "1") {
-  localStorage.setItem("crowRelayAvailable", "1");
+const crowMode = pageParams.get("crow") === "1";
+const crowCard = document.getElementById("crow-card");
+
+// Remove the older persisted reveal flag from prior builds/tests.
+localStorage.removeItem("crowRelayAvailable");
+
+if (crowMode) {
   accessScreen.classList.add("hidden");
   dashboard.classList.remove("hidden");
-}
-if (localStorage.getItem("crowRelayAvailable") === "1") {
-  const crowCard = document.getElementById("crow-card");
   if (crowCard) crowCard.classList.remove("hidden");
+} else {
+  if (crowCard) crowCard.classList.add("hidden");
 }
