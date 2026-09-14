@@ -262,3 +262,9 @@ Opens the blank document.
 Writes what comes next.
 
 End.
+
+
+## V6 updates
+- Added Meridian symbol branding to the site and opening directive.
+- Added Crow Industries emblem and foreshadowing on the Echo hijack / case file.
+- Added updated friend letters that mention Crow Industries while preserving note-encoding clues.

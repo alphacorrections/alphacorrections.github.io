@@ -504,3 +504,73 @@ footer {
 .objective-list li {
   margin: 7px 0;
 }
+
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.25));
+}
+
+.access-logo {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin: 0 auto 16px;
+  object-fit: contain;
+}
+
+.crow-watch-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.crow-mini-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.crow-watch-card {
+  border-left: 3px solid #5b0f1b;
+}
+
+.crow-signal-box {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin: 18px 0 8px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: #0d1115;
+}
+
+.crow-signal-box p { margin: 6px 0; }
+
+.crow-signal-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+  padding: 6px;
+  flex: 0 0 auto;
+}
+
+@media (max-width:700px) {
+  .brand-logo { width: 44px; height: 44px; }
+  .access-logo { width: 88px; }
+  .crow-signal-box { display:block; }
+  .crow-signal-logo { margin-bottom: 10px; }
+}

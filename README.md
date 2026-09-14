@@ -103,3 +103,9 @@ For testing, open the live site with `?test=1` at the end of the URL, for exampl
 `https://alphacorrections.github.io/?test=1`
 
 A small `RESET TEST MODE` control appears at the bottom only in test mode. The normal birthday URL does not show it.
+
+
+## V6 updates
+- Added Meridian symbol branding to the site and opening directive.
+- Added Crow Industries emblem and foreshadowing on the Echo hijack / case file.
+- Added updated friend letters that mention Crow Industries while preserving note-encoding clues.
