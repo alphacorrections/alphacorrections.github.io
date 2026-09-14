@@ -122,3 +122,14 @@ Dashboard order:
 After Echo unlocks, a hidden Crow Industries relay appears.
 Crow relay code: BLACKBIRD
 Recommended: put AFTER_CONTINUITY.txt on the flash drive so the Crow relay becomes an optional epilogue after the blank Continuity document.
+
+## V7.1 Crow epilogue behavior
+The Crow Industries card is hidden during the main investigation, even after Echo unlocks.
+
+To reveal it, open:
+https://alphacorrections.github.io/?crow=1
+
+The flash drive's AFTER_CONTINUITY.url opens this special epilogue route.
+
+Crow relay access code:
+BLACKBIRD

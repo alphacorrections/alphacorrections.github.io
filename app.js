@@ -72,8 +72,7 @@ $("#archive-submit").addEventListener("click", () => {
     $("#archive-modal").classList.add("hidden");
     const echoModal = $("#echo-modal");
     echoModal.classList.remove("hidden");
-    localStorage.setItem("echoUnlocked", "1");\n    const cc = document.getElementById("crow-card"); if (cc) cc.classList.remove("hidden");
-
+    localStorage.setItem("echoUnlocked", "1");\n
     setTimeout(() => {
       $("#echo-message").classList.remove("hidden");
     }, 2500);
@@ -138,4 +137,16 @@ if (localStorage.getItem("crowUnlocked") === "1") {
   const cl = document.getElementById("crow-lock");
   const letter = document.getElementById("crow-letter");
   if (cl && letter) { cl.classList.add("hidden"); letter.classList.remove("hidden"); }
+}
+
+
+// Crow epilogue is intentionally hidden during the main investigation.
+// Opening the special AFTER_CONTINUITY link enables the external relay.
+const pageParams = new URLSearchParams(window.location.search);
+if (pageParams.get("crow") === "1") {
+  localStorage.setItem("crowRelayAvailable", "1");
+}
+if (localStorage.getItem("crowRelayAvailable") === "1") {
+  const crowCard = document.getElementById("crow-card");
+  if (crowCard) crowCard.classList.remove("hidden");
 }
