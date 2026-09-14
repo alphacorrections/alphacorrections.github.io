@@ -68,6 +68,13 @@ The closet anomaly uses UNO. Fernanda must identify the swap and play UNO to ear
 
 ---
 
+### Alpha activation order
+Meridian explains why F-29 Alpha was activated instead of a standard field team:
+- Echo repeatedly anticipates Meridian investigative procedure.
+- F-29 Alpha has the highest predictive match to Echo's behavior.
+- The breach occurred inside Alpha's immediate environment, giving her access to context and relationships unavailable to outside teams.
+- Alpha's objectives are to verify the breach, recover dispersed evidence, determine Echo's objective, identify contacted individuals, evaluate the fracture connection, and complete the Correction if hostile intent is confirmed.
+
 ## ACT III — Contradiction
 The fracture log contains many entries.
 
@@ -106,7 +113,7 @@ Echo reveals:
 - She divided the next message across three trusted people.
 
 Echo proves her identity with a private detail:
-Fernanda still plays pretend and has imaginary people/worlds that only Kevin knows about.
+Fernanda still has people who exist nowhere anyone else can see. Kevin knows they exist, but there are parts of that private world she keeps entirely her own.
 
 Echo adds:
 "Mine have different names."
