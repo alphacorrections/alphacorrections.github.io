@@ -72,7 +72,8 @@ $("#archive-submit").addEventListener("click", () => {
     $("#archive-modal").classList.add("hidden");
     const echoModal = $("#echo-modal");
     echoModal.classList.remove("hidden");
-    localStorage.setItem("echoUnlocked", "1");\n
+    localStorage.setItem("echoUnlocked", "1");
+
     setTimeout(() => {
       $("#echo-message").classList.remove("hidden");
     }, 2500);
